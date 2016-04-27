@@ -41,18 +41,24 @@ new Promise((resolve, reject) => {
   return Promise.props(files);
 }).then(fulfillments => {
   for (const componentName in fulfillments) {
-      
-      if(componentName === 'index') {
-          Fs.writeFileSync(Path.join(outputPath, `/${componentName}.d.ts`), 
-            fulfillments[componentName].replace(/export ([a-zA-Z]+) from ('.*');/, 'export {default as $1} from $2;'));
-      }
-      
+
+    if (componentName === 'index') {
+
+      Fs.writeFileSync(Path.join(outputPath, `/${componentName}.d.ts`),
+        fulfillments[componentName].replace(/export ([a-zA-Z]+) from ('.*');/, 'export {default as $1} from $2;'));
+
+      delete fulfillments[componentName]
+    } else {
+
       try {
-        fulfillments[componentName] = ParseComponent(fulfillments[componentName]);      
+        fulfillments[componentName] = ParseComponent(fulfillments[componentName]);
       } catch (e) {
-          delete fulfillments[componentName]
+        console.log("Couldn't find definitions for " + componentName)
+        delete fulfillments[componentName]
       }
-    
+    }
+
+
   }
 
   return fulfillments;
@@ -60,10 +66,10 @@ new Promise((resolve, reject) => {
   let markdown = '';
 
   for (const componentName in fulfillments) {
-      
+
     const reactAPI = fulfillments[componentName];
     console.log("Generating for " + componentName);
-    
+
     Fs.writeFileSync(Path.join(outputPath, `/${componentName}.d.ts`), GenerateTypescript(componentName, reactAPI));
   }
 
