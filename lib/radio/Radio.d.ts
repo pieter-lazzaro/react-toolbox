@@ -1,13 +1,13 @@
 
 import * as React from "react";
 
-interface RadioProps {
+interface RadioProps extends React.DOMAttributes {
 
 checked?: boolean;
 //Children to pass through the component.
 children?: any;
 
-onMouseDown?: Function;
+onMouseDown?: (...args:any[]) => any;
 }
 
 

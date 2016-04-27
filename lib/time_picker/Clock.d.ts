@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface ClockProps {
+interface ClockProps extends React.DOMAttributes {
 //Additional class(es) for custom styling.
 //Default: ''
 className?: string;
@@ -12,9 +12,9 @@ display?: [object Object] | [object Object];
 //Default: '24hr'
 format?: [object Object] | [object Object];
 
-onChange?: Function;
+onChange?: (...args:any[]) => any;
 
-onHandMoved?: Function;
+onHandMoved?: (...args:any[]) => any;
 
 //Default: new Date()
 time?: undefined;

@@ -1,1 +1,1 @@
-export default from './Snackbar';
+export {default as default} from './Snackbar';

@@ -1,1 +1,1 @@
-export default from './Autocomplete';
+export {default as default} from './Autocomplete';

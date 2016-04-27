@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface ClockFaceProps {
+interface ClockFaceProps extends React.DOMAttributes {
 
 //Default: null
 active?: number;

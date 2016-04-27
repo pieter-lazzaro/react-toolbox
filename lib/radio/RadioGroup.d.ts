@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface RadioGroupProps {
+interface RadioGroupProps extends React.DOMAttributes {
 //Children to pass through the component.
 children?: React.ReactNode;
 //Additional class(es) for custom styling.
@@ -13,7 +13,7 @@ disabled?: boolean;
 
 name?: string;
 
-onChange?: Function;
+onChange?: (...args:any[]) => any;
 
 value?: any;
 }

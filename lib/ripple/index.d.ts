@@ -1,1 +1,1 @@
-export default from './Ripple';
+export {default as default} from './Ripple';

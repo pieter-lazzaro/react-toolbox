@@ -1,17 +1,17 @@
 
 import * as React from "react";
 
-interface CardTitleProps {
+interface CardTitleProps extends React.DOMAttributes {
 
-avatar?: string | React.Element;
+avatar?: string | React.ClassicElement<any>;
 //Children to pass through the component.
-children?: string | React.Element | any[];
+children?: string | React.ClassicElement<any> | any[];
 //Additional class(es) for custom styling.
 className?: string;
 
-subtitle?: string | React.Element;
+subtitle?: string | React.ClassicElement<any>;
 
-title?: string | React.Element;
+title?: string | React.ClassicElement<any>;
 }
 
 

@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface DatePickerDialogProps {
+interface DatePickerDialogProps extends React.DOMAttributes {
 
 //Default: false
 active?: boolean;
@@ -15,9 +15,9 @@ maxDate?: undefined;
 
 minDate?: undefined;
 
-onDismiss?: Function;
+onDismiss?: (...args:any[]) => any;
 
-onSelect?: Function;
+onSelect?: (...args:any[]) => any;
 
 //Default: new Date()
 value?: undefined;

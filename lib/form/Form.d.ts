@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface FormProps {
+interface FormProps extends React.DOMAttributes {
 
 //Default: []
 attributes?: any[];
@@ -13,13 +13,13 @@ className?: string;
 
 model?: undefined;
 
-onChange?: Function;
+onChange?: (...args:any[]) => any;
 
-onError?: Function;
+onError?: (...args:any[]) => any;
 
-onSubmit?: Function;
+onSubmit?: (...args:any[]) => any;
 
-onValid?: Function;
+onValid?: (...args:any[]) => any;
 
 storage?: string;
 }

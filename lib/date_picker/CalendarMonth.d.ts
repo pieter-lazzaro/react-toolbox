@@ -1,13 +1,13 @@
 
 import * as React from "react";
 
-interface CalendarMonthProps {
+interface CalendarMonthProps extends React.DOMAttributes {
 
 maxDate?: undefined;
 
 minDate?: undefined;
 
-onDayClick?: Function;
+onDayClick?: (...args:any[]) => any;
 
 selectedDate?: undefined;
 

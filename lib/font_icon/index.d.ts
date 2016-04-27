@@ -1,1 +1,1 @@
-export default from './FontIcon';
+export {default as default} from './FontIcon';

@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface CardMediaProps {
+interface CardMediaProps extends React.DOMAttributes {
 
 aspectRatio?: [object Object] | [object Object];
 //Children to pass through the component.
@@ -13,7 +13,7 @@ color?: string;
 
 contentOverlay?: boolean;
 
-image?: string | React.Element;
+image?: string | React.ClassicElement<any>;
 }
 
 

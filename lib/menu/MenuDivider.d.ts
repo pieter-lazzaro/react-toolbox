@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface MenuDividerProps {}
+interface MenuDividerProps extends React.DOMAttributes {}
 
 
 //

@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface DropdownProps {
+interface DropdownProps extends React.DOMAttributes {
 
 //Default: true
 allowBlank?: boolean;
@@ -19,15 +19,15 @@ error?: string;
 
 label?: string;
 
-onBlur?: Function;
+onBlur?: (...args:any[]) => any;
 
-onChange?: Function;
+onChange?: (...args:any[]) => any;
 
-onFocus?: Function;
+onFocus?: (...args:any[]) => any;
 
 source: any[];
 
-template?: Function;
+template?: (...args:any[]) => any;
 
 value?: string | number;
 }

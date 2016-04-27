@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface TabsProps {
+interface TabsProps extends React.DOMAttributes {
 //Children to pass through the component.
 children?: React.ReactNode;
 //Additional class(es) for custom styling.
@@ -12,7 +12,7 @@ disableAnimatedBottomBorder?: boolean;
 //Default: 0
 index?: number;
 
-onChange?: Function;
+onChange?: (...args:any[]) => any;
 }
 
 

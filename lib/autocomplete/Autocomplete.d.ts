@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface AutocompleteProps {
+interface AutocompleteProps extends React.DOMAttributes {
 //Additional class(es) for custom styling.
 //Default: ''
 className?: string;
@@ -18,7 +18,7 @@ label?: string;
 //Default: true
 multiple?: boolean;
 
-onChange?: Function;
+onChange?: (...args:any[]) => any;
 
 //Default: 'above'
 selectedPosition?: [object Object] | [object Object];

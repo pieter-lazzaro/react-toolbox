@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface ListSubHeaderProps {
+interface ListSubHeaderProps extends React.DOMAttributes {
 
 caption?: string;
 //Additional class(es) for custom styling.

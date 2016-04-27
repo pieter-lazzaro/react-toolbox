@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface ClockHandProps {
+interface ClockHandProps extends React.DOMAttributes {
 
 //Default: 0
 angle?: number;
@@ -12,9 +12,9 @@ className?: string;
 //Default: 0
 length?: number;
 
-onMove?: Function;
+onMove?: (...args:any[]) => any;
 
-onMoved?: Function;
+onMoved?: (...args:any[]) => any;
 
 //Default: {}
 origin?: undefined;

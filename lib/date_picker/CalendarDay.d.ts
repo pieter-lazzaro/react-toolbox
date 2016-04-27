@@ -1,13 +1,13 @@
 
 import * as React from "react";
 
-interface CalendarDayProps {
+interface CalendarDayProps extends React.DOMAttributes {
 
 day?: number;
 
 disabled?: boolean;
 
-onClick?: Function;
+onClick?: (...args:any[]) => any;
 
 selectedDate?: undefined;
 

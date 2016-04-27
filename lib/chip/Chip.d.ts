@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface ChipProps {
+interface ChipProps extends React.DOMAttributes {
 //Children to pass through the component.
 children?: React.ReactNode;
 //Additional class(es) for custom styling.
@@ -11,7 +11,7 @@ className?: string;
 //Default: false
 deletable?: boolean;
 
-onDeleteClick?: Function;
+onDeleteClick?: (...args:any[]) => any;
 }
 
 

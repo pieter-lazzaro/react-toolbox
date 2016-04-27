@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface ListItemActionProps {
+interface ListItemActionProps extends React.DOMAttributes {
 
 action?: undefined;
 }

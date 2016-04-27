@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface IconButtonProps {
+interface IconButtonProps extends React.DOMAttributes {
 
 //Default: false
 accent?: boolean;
@@ -15,16 +15,16 @@ disabled?: boolean;
 
 href?: string;
 
-icon?: string | React.Element;
+icon?: string | React.ClassicElement<any>;
 
 inverse?: boolean;
 
 //Default: true
 neutral?: boolean;
 
-onMouseLeave?: Function;
+onMouseLeave?: (...args:any[]) => any;
 
-onMouseUp?: Function;
+onMouseUp?: (...args:any[]) => any;
 
 //Default: false
 primary?: boolean;

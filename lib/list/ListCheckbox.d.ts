@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface ListCheckboxProps {
+interface ListCheckboxProps extends React.DOMAttributes {
 
 caption: string;
 
@@ -17,11 +17,11 @@ legend?: string;
 
 name?: string;
 
-onBlur?: Function;
+onBlur?: (...args:any[]) => any;
 
-onChange?: Function;
+onChange?: (...args:any[]) => any;
 
-onFocus?: Function;
+onFocus?: (...args:any[]) => any;
 }
 
 

@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface DatePickerProps {
+interface DatePickerProps extends React.DOMAttributes {
 
 autoOk?: boolean;
 //Additional class(es) for custom styling.
@@ -11,7 +11,7 @@ error?: string;
 
 inputClassName?: string;
 
-inputFormat?: Function;
+inputFormat?: (...args:any[]) => any;
 
 label?: string;
 
@@ -19,7 +19,7 @@ maxDate?: undefined;
 
 minDate?: undefined;
 
-onChange?: Function;
+onChange?: (...args:any[]) => any;
 
 value?: undefined;
 }

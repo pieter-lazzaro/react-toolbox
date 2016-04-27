@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface MenuProps {
+interface MenuProps extends React.DOMAttributes {
 
 //Default: false
 active?: boolean;
@@ -10,11 +10,11 @@ children?: React.ReactNode;
 //Additional class(es) for custom styling.
 className?: string;
 
-onHide?: Function;
+onHide?: (...args:any[]) => any;
 
-onSelect?: Function;
+onSelect?: (...args:any[]) => any;
 
-onShow?: Function;
+onShow?: (...args:any[]) => any;
 
 //Default: true
 outline?: boolean;

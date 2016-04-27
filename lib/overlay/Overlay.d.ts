@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface OverlayProps {
+interface OverlayProps extends React.DOMAttributes {
 
 active?: boolean;
 //Children to pass through the component.
@@ -12,9 +12,9 @@ className?: string;
 //Default: false
 invisible?: boolean;
 
-onClick?: Function;
+onClick?: (...args:any[]) => any;
 
-onEscKeyDown?: Function;
+onEscKeyDown?: (...args:any[]) => any;
 }
 
 

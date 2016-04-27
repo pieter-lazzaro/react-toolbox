@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface InputProps {
+interface InputProps extends React.DOMAttributes {
 //Children to pass through the component.
 children?: any;
 //Additional class(es) for custom styling.
@@ -19,7 +19,7 @@ floating?: boolean;
 //Default: ''
 hint?: string;
 
-icon?: string | React.Element;
+icon?: string | React.ClassicElement<any>;
 
 label?: string;
 
@@ -28,13 +28,13 @@ maxLength?: number;
 //Default: false
 multiline?: boolean;
 
-onBlur?: Function;
+onBlur?: (...args:any[]) => any;
 
-onChange?: Function;
+onChange?: (...args:any[]) => any;
 
-onFocus?: Function;
+onFocus?: (...args:any[]) => any;
 
-onKeyPress?: Function;
+onKeyPress?: (...args:any[]) => any;
 
 //Default: false
 required?: boolean;

@@ -1,15 +1,15 @@
 
 import * as React from "react";
 
-interface AvatarProps {
+interface AvatarProps extends React.DOMAttributes {
 //Children to pass through the component.
 children?: React.ReactNode;
 //Additional class(es) for custom styling.
 className?: string;
 
-icon?: string | React.Element;
+icon?: string | React.ClassicElement<any>;
 
-image?: string | React.Element;
+image?: string | React.ClassicElement<any>;
 
 title?: string;
 }

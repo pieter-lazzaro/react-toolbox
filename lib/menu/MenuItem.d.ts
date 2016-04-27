@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface MenuItemProps {
+interface MenuItemProps extends React.DOMAttributes {
 
 caption: string;
 //Children to pass through the component.
@@ -13,9 +13,9 @@ className?: string;
 //Default: false
 disabled?: boolean;
 
-icon?: string | React.Element;
+icon?: string | React.ClassicElement<any>;
 
-onClick?: Function;
+onClick?: (...args:any[]) => any;
 
 //Default: false
 selected?: boolean;

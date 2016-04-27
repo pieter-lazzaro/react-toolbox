@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface LinkProps {
+interface LinkProps extends React.DOMAttributes {
 
 //Default: false
 active?: boolean;
@@ -13,7 +13,7 @@ className?: string;
 
 count?: number;
 
-icon?: string | React.Element;
+icon?: string | React.ClassicElement<any>;
 
 label?: string;
 }

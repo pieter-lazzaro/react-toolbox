@@ -1,4 +1,4 @@
-export Menu from './Menu';
+export {default as Menu} from './Menu';
 export MenuItem from './MenuItem';
 export MenuDivider from './MenuDivider';
 export IconMenu from './IconMenu';

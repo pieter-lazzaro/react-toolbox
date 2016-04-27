@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface CalendarProps {
+interface CalendarProps extends React.DOMAttributes {
 
 //Default: 'months'
 display?: [object Object] | [object Object];
@@ -10,7 +10,7 @@ maxDate?: undefined;
 
 minDate?: undefined;
 
-onChange?: Function;
+onChange?: (...args:any[]) => any;
 
 //Default: new Date()
 selectedDate?: undefined;

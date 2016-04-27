@@ -1,9 +1,9 @@
 
 import * as React from "react";
 
-interface ListItemLayoutProps {
+interface ListItemLayoutProps extends React.DOMAttributes {
 
-avatar?: string | React.Element;
+avatar?: string | React.ClassicElement<any>;
 
 caption?: string;
 //Children to pass through the component.
@@ -14,17 +14,17 @@ className?: string;
 //Default: false
 disabled?: boolean;
 
-itemContent?: React.Element;
+itemContent?: React.ClassicElement<any>;
 
 leftActions?: any[];
 
-leftIcon?: string | React.Element;
+leftIcon?: string | React.ClassicElement<any>;
 
 legend?: string;
 
 rightActions?: any[];
 
-rightIcon?: string | React.Element;
+rightIcon?: string | React.ClassicElement<any>;
 
 //Default: false
 selectable?: boolean;

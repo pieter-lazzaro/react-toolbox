@@ -1,4 +1,4 @@
-export List from './List';
+export {default as List} from './List';
 export ListItem from './ListItem';
 export ListDivider from './ListDivider';
 export ListCheckbox from './ListCheckbox';

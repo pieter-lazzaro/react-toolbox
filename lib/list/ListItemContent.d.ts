@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface ListItemContentProps {
+interface ListItemContentProps extends React.DOMAttributes {
 
 caption?: string;
 //Children to pass through the component.

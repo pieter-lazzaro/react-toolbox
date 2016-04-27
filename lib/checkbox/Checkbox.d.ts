@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface CheckboxProps {
+interface CheckboxProps extends React.DOMAttributes {
 
 //Default: false
 checked?: boolean;
@@ -14,7 +14,7 @@ disabled?: boolean;
 
 label?: any;
 
-onChange?: Function;
+onChange?: (...args:any[]) => any;
 }
 
 

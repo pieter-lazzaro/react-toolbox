@@ -1,15 +1,15 @@
 
 import * as React from "react";
 
-interface ClockHoursProps {
+interface ClockHoursProps extends React.DOMAttributes {
 
 center?: undefined;
 
 format?: [object Object] | [object Object];
 
-onChange?: Function;
+onChange?: (...args:any[]) => any;
 
-onHandMoved?: Function;
+onHandMoved?: (...args:any[]) => any;
 
 radius?: number;
 

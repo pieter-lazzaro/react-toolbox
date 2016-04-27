@@ -1,12 +1,12 @@
 
 import * as React from "react";
 
-interface ClockMinutesProps {
+interface ClockMinutesProps extends React.DOMAttributes {
 
 center?: undefined;
 
 //Default: null
-onChange?: Function;
+onChange?: (...args:any[]) => any;
 
 radius?: number;
 

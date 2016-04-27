@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface SliderProps {
+interface SliderProps extends React.DOMAttributes {
 //Additional class(es) for custom styling.
 //Default: ''
 className?: string;
@@ -15,7 +15,7 @@ max?: number;
 //Default: 0
 min?: number;
 
-onChange?: Function;
+onChange?: (...args:any[]) => any;
 
 //Default: false
 pinned?: boolean;

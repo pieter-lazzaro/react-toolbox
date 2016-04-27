@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface TimePickerDialogProps {
+interface TimePickerDialogProps extends React.DOMAttributes {
 
 //Default: false
 active?: boolean;
@@ -11,9 +11,9 @@ className?: string;
 //Default: '24hr'
 format?: [object Object] | [object Object];
 
-onDismiss?: Function;
+onDismiss?: (...args:any[]) => any;
 
-onSelect?: Function;
+onSelect?: (...args:any[]) => any;
 
 //Default: new Date()
 value?: undefined;

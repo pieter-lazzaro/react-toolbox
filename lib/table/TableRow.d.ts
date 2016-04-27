@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface TableRowProps {
+interface TableRowProps extends React.DOMAttributes {
 
 data?: undefined;
 
@@ -9,9 +9,9 @@ index?: number;
 
 model?: undefined;
 
-onChange?: Function;
+onChange?: (...args:any[]) => any;
 
-onSelect?: Function;
+onSelect?: (...args:any[]) => any;
 
 selectable?: boolean;
 

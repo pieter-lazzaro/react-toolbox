@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface ButtonProps {
+interface ButtonProps extends React.DOMAttributes {
 
 //Default: false
 accent?: boolean;
@@ -21,7 +21,7 @@ floating?: boolean;
 
 href?: string;
 
-icon?: string | React.Element;
+icon?: string | React.ClassicElement<any>;
 
 inverse?: boolean;
 
@@ -33,9 +33,9 @@ mini?: boolean;
 //Default: true
 neutral?: boolean;
 
-onMouseLeave?: Function;
+onMouseLeave?: (...args:any[]) => any;
 
-onMouseUp?: Function;
+onMouseUp?: (...args:any[]) => any;
 
 //Default: false
 primary?: boolean;

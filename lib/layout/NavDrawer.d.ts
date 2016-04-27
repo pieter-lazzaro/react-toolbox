@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface NavDrawerProps {
+interface NavDrawerProps extends React.DOMAttributes {
 
 //Default: false
 active?: boolean;
@@ -11,7 +11,7 @@ children?: any;
 //Default: ''
 className?: string;
 
-onOverlayClick?: Function;
+onOverlayClick?: (...args:any[]) => any;
 
 permanentAt?: [object Object] | [object Object] | [object Object] | [object Object] | [object Object] | [object Object];
 

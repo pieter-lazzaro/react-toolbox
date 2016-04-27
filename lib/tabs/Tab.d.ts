@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface TabProps {
+interface TabProps extends React.DOMAttributes {
 
 //Default: false
 active?: boolean;
@@ -19,9 +19,9 @@ hidden?: boolean;
 
 label: any;
 
-onActive?: Function;
+onActive?: (...args:any[]) => any;
 
-onClick?: Function;
+onClick?: (...args:any[]) => any;
 }
 
 

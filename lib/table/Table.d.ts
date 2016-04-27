@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface TableProps {
+interface TableProps extends React.DOMAttributes {
 //Additional class(es) for custom styling.
 //Default: ''
 className?: string;
@@ -11,9 +11,9 @@ heading?: boolean;
 
 model?: undefined;
 
-onChange?: Function;
+onChange?: (...args:any[]) => any;
 
-onSelect?: Function;
+onSelect?: (...args:any[]) => any;
 
 //Default: true
 selectable?: boolean;

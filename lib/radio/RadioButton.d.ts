@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface RadioButtonProps {
+interface RadioButtonProps extends React.DOMAttributes {
 
 //Default: false
 checked?: boolean;
@@ -16,11 +16,11 @@ label?: string;
 
 name?: string;
 
-onBlur?: Function;
+onBlur?: (...args:any[]) => any;
 
-onChange?: Function;
+onChange?: (...args:any[]) => any;
 
-onFocus?: Function;
+onFocus?: (...args:any[]) => any;
 
 value?: any;
 }
