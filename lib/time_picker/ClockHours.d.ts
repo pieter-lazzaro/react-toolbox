@@ -3,9 +3,9 @@ import * as React from "react";
 
 interface ClockHoursProps extends React.DOMAttributes {
 
-center?: undefined;
+center?: Object;
 
-format?: [object Object] | [object Object];
+format?: '24hr' | 'ampm';
 
 onChange?: (...args:any[]) => any;
 

@@ -9,7 +9,7 @@ className?: string;
 error?: string;
 
 //Default: '24hr'
-format?: [object Object] | [object Object];
+format?: '24hr' | 'ampm';
 
 inputClassName?: string;
 
@@ -17,7 +17,7 @@ label?: string;
 
 onChange?: (...args:any[]) => any;
 
-value?: undefined;
+value?: Object;
 }
 
 

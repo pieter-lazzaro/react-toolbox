@@ -3,7 +3,7 @@ import * as React from "react";
 
 interface ClockMinutesProps extends React.DOMAttributes {
 
-center?: undefined;
+center?: Object;
 
 //Default: null
 onChange?: (...args:any[]) => any;

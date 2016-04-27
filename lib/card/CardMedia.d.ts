@@ -3,7 +3,7 @@ import * as React from "react";
 
 interface CardMediaProps extends React.DOMAttributes {
 
-aspectRatio?: [object Object] | [object Object];
+aspectRatio?: 'wide' | 'square';
 //Children to pass through the component.
 children?: any;
 //Additional class(es) for custom styling.

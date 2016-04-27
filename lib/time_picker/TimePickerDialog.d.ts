@@ -9,14 +9,14 @@ active?: boolean;
 className?: string;
 
 //Default: '24hr'
-format?: [object Object] | [object Object];
+format?: '24hr' | 'ampm';
 
 onDismiss?: (...args:any[]) => any;
 
 onSelect?: (...args:any[]) => any;
 
 //Default: new Date()
-value?: undefined;
+value?: Object;
 }
 
 

@@ -15,13 +15,13 @@ inputFormat?: (...args:any[]) => any;
 
 label?: string;
 
-maxDate?: undefined;
+maxDate?: Object;
 
-minDate?: undefined;
+minDate?: Object;
 
 onChange?: (...args:any[]) => any;
 
-value?: undefined;
+value?: Object;
 }
 
 

@@ -7,7 +7,7 @@ interface TableHeadProps extends React.DOMAttributes {
 className?: string;
 
 //Default: {}
-model?: undefined;
+model?: Object;
 
 onSelect?: (...args:any[]) => any;
 

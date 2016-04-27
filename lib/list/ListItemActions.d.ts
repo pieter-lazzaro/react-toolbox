@@ -5,7 +5,7 @@ interface ListItemActionsProps extends React.DOMAttributes {
 //Children to pass through the component.
 children?: any;
 
-type?: [object Object] | [object Object];
+type?: 'left' | 'right';
 }
 
 

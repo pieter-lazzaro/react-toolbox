@@ -11,16 +11,16 @@ autoOk?: boolean;
 //Default: ''
 className?: string;
 
-maxDate?: undefined;
+maxDate?: Object;
 
-minDate?: undefined;
+minDate?: Object;
 
 onDismiss?: (...args:any[]) => any;
 
 onSelect?: (...args:any[]) => any;
 
 //Default: new Date()
-value?: undefined;
+value?: Object;
 }
 
 

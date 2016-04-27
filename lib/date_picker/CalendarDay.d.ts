@@ -9,9 +9,9 @@ disabled?: boolean;
 
 onClick?: (...args:any[]) => any;
 
-selectedDate?: undefined;
+selectedDate?: Object;
 
-viewDate?: undefined;
+viewDate?: Object;
 }
 
 

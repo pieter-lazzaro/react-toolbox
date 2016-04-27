@@ -7,17 +7,17 @@ interface ClockProps extends React.DOMAttributes {
 className?: string;
 
 //Default: 'hours'
-display?: [object Object] | [object Object];
+display?: 'hours' | 'minutes';
 
 //Default: '24hr'
-format?: [object Object] | [object Object];
+format?: '24hr' | 'ampm';
 
 onChange?: (...args:any[]) => any;
 
 onHandMoved?: (...args:any[]) => any;
 
 //Default: new Date()
-time?: undefined;
+time?: Object;
 }
 
 

@@ -3,11 +3,11 @@ import * as React from "react";
 
 interface TableRowProps extends React.DOMAttributes {
 
-data?: undefined;
+data?: Object;
 
 index?: number;
 
-model?: undefined;
+model?: Object;
 
 onChange?: (...args:any[]) => any;
 

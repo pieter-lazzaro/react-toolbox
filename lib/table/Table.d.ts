@@ -9,7 +9,7 @@ className?: string;
 //Default: true
 heading?: boolean;
 
-model?: undefined;
+model?: Object;
 
 onChange?: (...args:any[]) => any;
 

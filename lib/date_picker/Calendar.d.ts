@@ -4,18 +4,18 @@ import * as React from "react";
 interface CalendarProps extends React.DOMAttributes {
 
 //Default: 'months'
-display?: [object Object] | [object Object];
+display?: 'months' | 'years';
 
-maxDate?: undefined;
+maxDate?: Object;
 
-minDate?: undefined;
+minDate?: Object;
 
 onChange?: (...args:any[]) => any;
 
 //Default: new Date()
-selectedDate?: undefined;
+selectedDate?: Object;
 
-viewDate?: undefined;
+viewDate?: Object;
 }
 
 

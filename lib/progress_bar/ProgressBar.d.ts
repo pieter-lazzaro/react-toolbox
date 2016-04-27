@@ -22,7 +22,7 @@ mode?: string;
 multicolor?: boolean;
 
 //Default: 'linear'
-type?: [object Object] | [object Object];
+type?: 'linear' | 'circular';
 
 //Default: 0
 value?: number;

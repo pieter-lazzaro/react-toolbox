@@ -3,15 +3,15 @@ import * as React from "react";
 
 interface CalendarMonthProps extends React.DOMAttributes {
 
-maxDate?: undefined;
+maxDate?: Object;
 
-minDate?: undefined;
+minDate?: Object;
 
 onDayClick?: (...args:any[]) => any;
 
-selectedDate?: undefined;
+selectedDate?: Object;
 
-viewDate?: undefined;
+viewDate?: Object;
 }
 
 

@@ -15,7 +15,7 @@ className?: string;
 routes?: any[];
 
 //Default: 'horizontal'
-type?: [object Object] | [object Object];
+type?: 'vertical' | 'horizontal';
 }
 
 

@@ -15,7 +15,7 @@ pinned?: boolean;
 scrollY?: boolean;
 
 //Default: 5
-width?: [object Object] | [object Object] | [object Object] | [object Object] | [object Object] | [object Object] | [object Object] | [object Object] | [object Object] | [object Object] | [object Object] | [object Object] | [object Object] | [object Object] | [object Object] | [object Object] | [object Object] | [object Object];
+width?: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 25 | 33 | 50 | 66 | 75 | 100;
 }
 
 

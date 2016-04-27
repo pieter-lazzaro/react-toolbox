@@ -7,7 +7,7 @@ interface AutocompleteProps extends React.DOMAttributes {
 className?: string;
 
 //Default: 'auto'
-direction?: [object Object] | [object Object] | [object Object];
+direction?: 'auto' | 'up' | 'down';
 
 disabled?: boolean;
 
@@ -21,7 +21,7 @@ multiple?: boolean;
 onChange?: (...args:any[]) => any;
 
 //Default: 'above'
-selectedPosition?: [object Object] | [object Object];
+selectedPosition?: 'above' | 'below';
 
 //Default: {}
 source?: any;

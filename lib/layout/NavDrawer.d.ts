@@ -13,7 +13,7 @@ className?: string;
 
 onOverlayClick?: (...args:any[]) => any;
 
-permanentAt?: [object Object] | [object Object] | [object Object] | [object Object] | [object Object] | [object Object];
+permanentAt?: 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'xxxl';
 
 pinned?: boolean;
 
@@ -21,7 +21,7 @@ pinned?: boolean;
 scrollY?: boolean;
 
 //Default: 'normal'
-width?: [object Object] | [object Object];
+width?: 'normal' | 'wide';
 }
 
 

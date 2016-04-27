@@ -11,7 +11,7 @@ children?: React.ReactNode;
 //Default: ''
 className?: string;
 
-model?: undefined;
+model?: Object;
 
 onChange?: (...args:any[]) => any;
 

@@ -3,7 +3,7 @@ import * as React from "react";
 
 interface ListItemActionProps extends React.DOMAttributes {
 
-action?: undefined;
+action?: Object;
 }
 
 

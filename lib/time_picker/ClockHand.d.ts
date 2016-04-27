@@ -17,7 +17,7 @@ onMove?: (...args:any[]) => any;
 onMoved?: (...args:any[]) => any;
 
 //Default: {}
-origin?: undefined;
+origin?: Object;
 
 step?: number;
 }
