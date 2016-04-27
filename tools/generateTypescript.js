@@ -71,10 +71,10 @@ function generateProp(propName, prop) {
 
 function generatePropsInterface(name, props) {
   if (!props) {
-    return `interface ${name}Props extends React.DOMAttributes {}\n`;
+    return `interface ${name}Props extends React.HTMLAttributes {}\n`;
   }
 
-  return 'interface ' + name + 'Props extends React.DOMAttributes {\n' + Object.keys(props).sort().map(function (propName) {
+  return 'interface ' + name + 'Props extends React.HTMLAttributes {\n' + Object.keys(props).sort().map(function (propName) {
     return generateProp(propName, props[propName]);
   }).join('\n') + '\n}\n';
 }
