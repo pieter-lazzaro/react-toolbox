@@ -26,7 +26,7 @@ function generatePropType(type) {
       return '(...args:any[]) => any';
     case 'enum':
       if(Array.isArray(type.value)) {
-        return type.value.join(' | ');  
+        return type.value.map( value => value.value).join(' | ');  
       }
       return type.value;
     case 'union':
@@ -37,7 +37,9 @@ function generatePropType(type) {
       return 'React.ReactNode';
     case 'array':
       return 'any[]';
-  }
+    case 'object':
+      return 'Object';
+    }
 }
 
 function generateProp(propName, prop) {
