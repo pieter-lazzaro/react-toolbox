@@ -3,7 +3,7 @@ import * as React from "react";
 
 interface LayoutProps extends React.DOMAttributes {
 //Children to pass through the component.
-children?: undefined;
+children?: any;
 //Additional class(es) for custom styling.
 //Default: ''
 className?: string;
