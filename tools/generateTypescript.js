@@ -52,6 +52,9 @@ function generatePropType(type) {
     case 'object':
       return 'Object';
   }
+  
+  // Default to any for unkown
+  return 'any';
 }
 
 function generateProp(propName, prop) {
