@@ -1,4 +1,4 @@
 export {default as SlideLeft} from './slide-left';
-export SlideRight from './slide-right';
-export ZoomIn from './zoom-in';
-export ZoomOut from './zoom-out';
+export {default as SlideRight} from './slide-right';
+export {default as ZoomIn} from './zoom-in';
+export {default as ZoomOut} from './zoom-out';

@@ -1,2 +1,2 @@
 export {default as RadioButton} from './RadioButton';
-export RadioGroup from './RadioGroup';
+export {default as RadioGroup} from './RadioGroup';

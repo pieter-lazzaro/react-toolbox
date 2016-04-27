@@ -1,7 +1,7 @@
 export {default as List} from './List';
-export ListItem from './ListItem';
-export ListDivider from './ListDivider';
-export ListCheckbox from './ListCheckbox';
-export ListSubHeader from './ListSubHeader';
-export ListItemText from './ListItemText';
-export ListItemContent from './ListItemContent';
+export {default as ListItem} from './ListItem';
+export {default as ListDivider} from './ListDivider';
+export {default as ListCheckbox} from './ListCheckbox';
+export {default as ListSubHeader} from './ListSubHeader';
+export {default as ListItemText} from './ListItemText';
+export {default as ListItemContent} from './ListItemContent';
