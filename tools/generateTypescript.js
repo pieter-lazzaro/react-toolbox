@@ -23,7 +23,7 @@ function generatePropType(type) {
     case 'bool':
       return 'boolean';
     case 'func':
-      return 'Function';
+      return '(...args:any[]) => any';
     case 'enum':
       if(Array.isArray(type.value)) {
         return type.value.join(' | ');  
@@ -32,7 +32,7 @@ function generatePropType(type) {
     case 'union':
       return type.value.map(generatePropType).join(' | ');
     case 'element':
-      return 'React.Element';
+      return 'React.ClassicElement<any>';
     case 'node':
       return 'React.ReactNode';
     case 'array':
@@ -54,10 +54,10 @@ function generateProp(propName, prop) {
 
 function generatePropsInterface(name, props) {
   if(!props) {
-    return `interface ${name}Props {}\n`;
+    return `interface ${name}Props extends React.DOMAttributes {}\n`;
   }
   
-  return 'interface ' + name + 'Props {\n' + Object.keys(props).sort().map(function (propName) {
+  return 'interface ' + name + 'Props extends React.DOMAttributes {\n' + Object.keys(props).sort().map(function (propName) {
     return generateProp(propName, props[propName]);
   }).join('\n') + '\n}\n';
 }

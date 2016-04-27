@@ -43,7 +43,8 @@ new Promise((resolve, reject) => {
   for (const componentName in fulfillments) {
       
       if(componentName === 'index') {
-          Fs.writeFileSync(Path.join(outputPath, `/${componentName}.d.ts`), fulfillments[componentName]);
+          Fs.writeFileSync(Path.join(outputPath, `/${componentName}.d.ts`), 
+            fulfillments[componentName].replace(/export ([a-zA-Z]+) from ('.*');/, 'export {default as $1} from $2;'));
       }
       
       try {
