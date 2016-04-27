@@ -25,8 +25,20 @@ function generatePropType(type) {
     case 'func':
       return '(...args:any[]) => any';
     case 'enum':
-      if(Array.isArray(type.value)) {
-        return type.value.map( value => value.value).join(' | ');  
+      if (Array.isArray(type.value)) {
+        let types = Object.keys(
+          type.value.reduce((acc, value) => {
+            if(!isNaN(parseInt(value.value))) {
+              acc["number"] = true;
+            } else {
+              acc[value.value] = true;
+            }
+            return acc;
+          },
+          {})
+        );
+        console.log(type.value, types);
+        return types.join(' | ');
       }
       return type.value;
     case 'union':
@@ -39,7 +51,7 @@ function generatePropType(type) {
       return 'any[]';
     case 'object':
       return 'Object';
-    }
+  }
 }
 
 function generateProp(propName, prop) {
@@ -55,10 +67,10 @@ function generateProp(propName, prop) {
 }
 
 function generatePropsInterface(name, props) {
-  if(!props) {
+  if (!props) {
     return `interface ${name}Props extends React.DOMAttributes {}\n`;
   }
-  
+
   return 'interface ' + name + 'Props extends React.DOMAttributes {\n' + Object.keys(props).sort().map(function (propName) {
     return generateProp(propName, props[propName]);
   }).join('\n') + '\n}\n';
@@ -69,8 +81,8 @@ function generateComponentDefinition(name, description) {
 }
 
 function generateDefinition(name, reactAPI) {
-  var markdownString = 
-`
+  var markdownString =
+    `
 import * as React from "react";
 
 ${generatePropsInterface(name, reactAPI.props)}
@@ -79,7 +91,7 @@ ${generateComponentDefinition(name, reactAPI.description)}
 
 export default ${name};
 `
-  
+
   return markdownString;
 }
 
