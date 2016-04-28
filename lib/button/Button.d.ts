@@ -1,7 +1,8 @@
 
 import * as React from "react";
+import {RippleProps} from '../ripple/Ripple';
 
-interface ButtonProps extends React.HTMLAttributes {
+interface ButtonProps extends React.HTMLAttributes, RippleProps {
 
 //Default: false
 accent?: boolean;
