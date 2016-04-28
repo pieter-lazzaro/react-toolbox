@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface SwitchProps extends React.HTMLAttributes {
+interface SwitchProps extends React.DOMAttributes {
 
 //Default: false
 checked?: boolean;

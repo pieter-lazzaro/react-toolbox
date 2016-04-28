@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface MenuItemProps extends React.HTMLAttributes {
+interface MenuItemProps extends React.DOMAttributes {
 
 caption: string;
 //Children to pass through the component.

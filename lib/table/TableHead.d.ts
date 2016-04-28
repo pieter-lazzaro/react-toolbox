@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface TableHeadProps extends React.HTMLAttributes {
+interface TableHeadProps extends React.DOMAttributes {
 //Additional class(es) for custom styling.
 //Default: ''
 className?: string;

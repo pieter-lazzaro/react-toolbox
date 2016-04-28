@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface CheckProps extends React.HTMLAttributes {
+interface CheckProps extends React.DOMAttributes {
 
 checked?: boolean;
 //Children to pass through the component.
