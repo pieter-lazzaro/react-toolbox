@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface ClockProps extends React.DOMAttributes {
+interface ClockProps extends React.HTMLAttributes {
 //Additional class(es) for custom styling.
 //Default: ''
 className?: string;

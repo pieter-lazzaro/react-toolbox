@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface DropdownProps extends React.DOMAttributes {
+interface DropdownProps extends React.HTMLAttributes {
 
 //Default: true
 allowBlank?: boolean;

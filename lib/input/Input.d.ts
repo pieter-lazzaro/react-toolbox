@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface InputProps extends React.DOMAttributes {
+interface InputProps extends React.HTMLAttributes {
 //Children to pass through the component.
 children?: any;
 //Additional class(es) for custom styling.

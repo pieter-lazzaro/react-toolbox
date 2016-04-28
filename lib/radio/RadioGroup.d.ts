@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface RadioGroupProps extends React.DOMAttributes {
+interface RadioGroupProps extends React.HTMLAttributes {
 //Children to pass through the component.
 children?: React.ReactNode;
 //Additional class(es) for custom styling.
