@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface CheckboxProps extends React.HTMLAttributes {
+interface CheckboxProps extends React.DOMAttributes {
 
 //Default: false
 checked?: boolean;

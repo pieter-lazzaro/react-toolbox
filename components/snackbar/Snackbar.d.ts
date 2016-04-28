@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface SnackbarProps extends React.HTMLAttributes {
+interface SnackbarProps extends React.DOMAttributes {
     action?: string;
     active?: boolean;
     className?: string;

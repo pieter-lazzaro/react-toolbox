@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface ProgressBarProps extends React.HTMLAttributes {
+interface ProgressBarProps extends React.DOMAttributes {
 
 //Default: 0
 buffer?: number;

@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface DatePickerProps extends React.HTMLAttributes {
+interface DatePickerProps extends React.DOMAttributes {
 
 autoOk?: boolean;
 //Additional class(es) for custom styling.

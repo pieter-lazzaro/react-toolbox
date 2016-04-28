@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface NavigationProps extends React.HTMLAttributes {
+interface NavigationProps extends React.DOMAttributes {
 
 //Default: []
 actions?: any[];

@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface CardTitleProps extends React.HTMLAttributes {
+interface CardTitleProps extends React.DOMAttributes {
 
 avatar?: string | React.ClassicElement<any>;
 //Children to pass through the component.

@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface ListProps extends React.HTMLAttributes {
+interface ListProps extends React.DOMAttributes {
 //Children to pass through the component.
 children?: React.ReactNode;
 //Additional class(es) for custom styling.
