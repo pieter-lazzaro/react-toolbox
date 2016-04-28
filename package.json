@@ -116,5 +116,5 @@
     "react-addons-css-transition-group": "^0.14.0 || ^15.0.1",
     "react-dom": "^0.14.0 || ^15.0.1"
   },
-  "typings": "./react-toolbox.d.ts"
+  "typings": "./lib/index.d.ts"
 }
