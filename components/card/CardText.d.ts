@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface CardTextProps extends React.DOMAttributes {
+interface CardTextProps extends React.HTMLAttributes {
 //Children to pass through the component.
 children?: any;
 //Additional class(es) for custom styling.

@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface ListItemActionProps extends React.DOMAttributes {
+interface ListItemActionProps extends React.HTMLAttributes {
 
 action?: Object;
 }

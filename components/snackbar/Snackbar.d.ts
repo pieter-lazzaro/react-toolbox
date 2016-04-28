@@ -1,16 +1,16 @@
 
 import * as React from "react";
 
-interface SnackbarProps extends React.DOMAttributes {
-    action?: string,
-    active?: boolean,
-    className?: string,
-    icon?: string | React.ReactElement,
-    label: string,
-    onClick?: (event: React.MouseEvent) => void,
-    onTimeout?: () => void,
-    timeout?: number,
-    type?: string
+interface SnackbarProps extends React.HTMLAttributes {
+    action?: string;
+    active?: boolean;
+    className?: string;
+    icon?: string | React.ReactElement<any>;
+    label: string;
+    onClick?: (event: React.MouseEvent) => void;
+    onTimeout?: () => void;
+    timeout?: number;
+    type?: string;
   }
 
 

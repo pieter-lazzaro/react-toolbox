@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface TimePickerDialogProps extends React.DOMAttributes {
+interface TimePickerDialogProps extends React.HTMLAttributes {
 
 //Default: false
 active?: boolean;

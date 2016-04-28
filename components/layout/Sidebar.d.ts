@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface SidebarProps extends React.DOMAttributes {
+interface SidebarProps extends React.HTMLAttributes {
 //Children to pass through the component.
 children?: any;
 //Additional class(es) for custom styling.

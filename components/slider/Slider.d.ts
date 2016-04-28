@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface SliderProps extends React.DOMAttributes {
+interface SliderProps extends React.HTMLAttributes {
 //Additional class(es) for custom styling.
 //Default: ''
 className?: string;

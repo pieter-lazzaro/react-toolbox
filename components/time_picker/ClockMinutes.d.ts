@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface ClockMinutesProps extends React.DOMAttributes {
+interface ClockMinutesProps extends React.HTMLAttributes {
 
 center?: Object;
 

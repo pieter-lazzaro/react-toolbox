@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface LinkProps extends React.DOMAttributes {
+interface LinkProps extends React.HTMLAttributes {
 
 //Default: false
 active?: boolean;

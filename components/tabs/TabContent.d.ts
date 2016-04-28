@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface TabContentProps extends React.DOMAttributes {
+interface TabContentProps extends React.HTMLAttributes {
 
 //Default: false
 active?: boolean;

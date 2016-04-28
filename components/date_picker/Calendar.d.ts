@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface CalendarProps extends React.DOMAttributes {
+interface CalendarProps extends React.HTMLAttributes {
 
 //Default: 'months'
 display?: 'months' | 'years';

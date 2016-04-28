@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface ListItemLayoutProps extends React.DOMAttributes {
+interface ListItemLayoutProps extends React.HTMLAttributes {
 
 avatar?: string | React.ClassicElement<any>;
 

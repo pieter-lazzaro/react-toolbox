@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface CalendarMonthProps extends React.DOMAttributes {
+interface CalendarMonthProps extends React.HTMLAttributes {
 
 maxDate?: Object;
 

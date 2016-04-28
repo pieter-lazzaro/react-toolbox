@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface ListDividerProps extends React.DOMAttributes {
+interface ListDividerProps extends React.HTMLAttributes {
 
 //Default: false
 inset?: boolean;

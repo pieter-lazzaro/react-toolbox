@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface PanelProps extends React.DOMAttributes {
+interface PanelProps extends React.HTMLAttributes {
 //Children to pass through the component.
 children?: any;
 //Additional class(es) for custom styling.

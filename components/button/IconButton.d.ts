@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface IconButtonProps extends React.DOMAttributes {
+interface IconButtonProps extends React.HTMLAttributes {
 
 //Default: false
 accent?: boolean;

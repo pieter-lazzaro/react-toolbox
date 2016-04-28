@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface CardMediaProps extends React.DOMAttributes {
+interface CardMediaProps extends React.HTMLAttributes {
 
 aspectRatio?: 'wide' | 'square';
 //Children to pass through the component.
