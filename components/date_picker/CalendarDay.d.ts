@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface CalendarDayProps extends React.DOMAttributes {
+interface CalendarDayProps extends React.HTMLAttributes {
 
 day?: number;
 

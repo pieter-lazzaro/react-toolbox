@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface MenuProps extends React.DOMAttributes {
+interface MenuProps extends React.HTMLAttributes {
 
 //Default: false
 active?: boolean;

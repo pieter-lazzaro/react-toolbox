@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface FormProps extends React.DOMAttributes {
+interface FormProps extends React.HTMLAttributes {
 
 //Default: []
 attributes?: any[];

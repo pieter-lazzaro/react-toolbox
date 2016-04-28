@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface FontIconProps extends React.DOMAttributes {
+interface FontIconProps extends React.HTMLAttributes {
 //Children to pass through the component.
 children?: any;
 //Additional class(es) for custom styling.

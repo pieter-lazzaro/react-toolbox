@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface TimePickerProps extends React.DOMAttributes {
+interface TimePickerProps extends React.HTMLAttributes {
 //Additional class(es) for custom styling.
 //Default: ''
 className?: string;

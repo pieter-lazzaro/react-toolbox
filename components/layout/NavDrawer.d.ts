@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface NavDrawerProps extends React.DOMAttributes {
+interface NavDrawerProps extends React.HTMLAttributes {
 
 //Default: false
 active?: boolean;

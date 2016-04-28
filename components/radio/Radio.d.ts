@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface RadioProps extends React.DOMAttributes {
+interface RadioProps extends React.HTMLAttributes {
 
 checked?: boolean;
 //Children to pass through the component.
