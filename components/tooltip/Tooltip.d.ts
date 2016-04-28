@@ -11,6 +11,6 @@ export interface TooltipProps {
     tooltipHideOnClick?: boolean;
 }
 
-declare const Tooltip: <T>(component: React.ComponentClass<T> | React.SFC<T>) => React.ComponentClass<T & TooltipProps>; 
+declare const Tooltip: <T>(component: React.ComponentClass<T> | React.StatelessComponent<T>) => React.ComponentClass<T & TooltipProps>; 
 
 export default Tooltip;
