@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface AutocompleteProps extends React.HTMLAttributes {
+interface AutocompleteProps extends React.DOMAttributes {
 //Additional class(es) for custom styling.
 //Default: ''
 className?: string;

@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface ChipProps extends React.HTMLAttributes {
+interface ChipProps extends React.DOMAttributes {
 //Children to pass through the component.
 children?: React.ReactNode;
 //Additional class(es) for custom styling.

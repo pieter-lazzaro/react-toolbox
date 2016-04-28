@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface DatePickerDialogProps extends React.HTMLAttributes {
+interface DatePickerDialogProps extends React.DOMAttributes {
 
 //Default: false
 active?: boolean;

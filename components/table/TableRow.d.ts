@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface TableRowProps extends React.HTMLAttributes {
+interface TableRowProps extends React.DOMAttributes {
 
 data?: Object;
 

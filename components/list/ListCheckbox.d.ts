@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface ListCheckboxProps extends React.HTMLAttributes {
+interface ListCheckboxProps extends React.DOMAttributes {
 
 caption: string;
 

@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface RadioButtonProps extends React.HTMLAttributes {
+interface RadioButtonProps extends React.DOMAttributes {
 
 //Default: false
 checked?: boolean;

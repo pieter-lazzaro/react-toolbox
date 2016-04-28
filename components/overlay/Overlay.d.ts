@@ -1,7 +1,7 @@
 
 import * as React from "react";
 
-interface OverlayProps extends React.HTMLAttributes {
+interface OverlayProps extends React.DOMAttributes {
 
 active?: boolean;
 //Children to pass through the component.
