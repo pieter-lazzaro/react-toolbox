@@ -93,8 +93,9 @@
   },
   "scripts": {
     "babel": "babel ./components --out-dir ./lib",
-    "build": "cross-env NODE_ENV=production npm run babel && npm run sass",
+    "build": "cross-env NODE_ENV=production npm run babel && npm run sass && npm run types",
     "clean": "rimraf ./lib",
+    "types": "cpx './components/**/*.d.ts' ./lib",
     "lint": "npm run lint:js && npm run lint:scss",
     "lint:js": "eslint ./ --ext .js",
     "lint:scss": "sass-lint ./components/**/*.scss -v -i ./components/slider/style.scss",
